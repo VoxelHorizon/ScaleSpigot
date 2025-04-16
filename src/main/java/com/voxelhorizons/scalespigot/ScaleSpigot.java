@@ -2,7 +2,7 @@ package com.voxelhorizons.scalespigot;
 
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
-import redis.clients.jedis.Jedis;
+import com.littleadventures.shaded.jedis.Jedis;
 
 public class ScaleSpigot extends JavaPlugin {
     private Jedis redis;
