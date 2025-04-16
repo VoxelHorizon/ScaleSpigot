@@ -37,7 +37,7 @@ jobs:
       - name: Find .jar file
         id: jar
         run: |
-          JAR_PATH=$(find target -type f -name "*-shaded.jar" | head -n 1)
+          JAR_PATH=$(find target -type f -name "*.jar" | head -n 1)
           echo "jar_file=$JAR_PATH" >> $GITHUB_OUTPUT
 
       - name: Create GitHub Release
