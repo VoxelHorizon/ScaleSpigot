@@ -39,7 +39,12 @@
 							<goal>shade</goal>
 						</goals>
 						<configuration>
-							<minimizeJar>true</minimizeJar>
+							<artifactSet>
+								<includes>
+									<include>redis.clients:jedis</include>
+								</includes>
+							</artifactSet>
+							<minimizeJar>false</minimizeJar> <!-- set to false to make sure it's not removing too much -->
 						</configuration>
 					</execution>
 				</executions>
