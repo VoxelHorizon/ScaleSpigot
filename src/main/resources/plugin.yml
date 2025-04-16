@@ -1,0 +1,5 @@
+name: ScaleSpigot
+version: '1.0-SNAPSHOT'
+main: com.littleadventures.scalespigot.ScaleSpigot
+api-version: '1.21'
+author: LittleAdventures
