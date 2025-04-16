@@ -1,4 +1,4 @@
-package com.littleadventures.scalespigot;
+package com.voxelhorizons.scalespigot;
 
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
