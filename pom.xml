@@ -39,14 +39,7 @@
 							<goal>shade</goal>
 						</goals>
 						<configuration>
-							<relocations>
-								<!-- Optional: relocate Jedis to avoid conflicts with other plugins -->
-								<relocation>
-									<pattern>redis.clients.jedis</pattern>
-									<shadedPattern>com.littleadventures.shaded.jedis</shadedPattern>
-								</relocation>
-							</relocations>
-							<minimizeJar>true</minimizeJar> <!-- Removes unused classes from dependencies -->
+							<minimizeJar>true</minimizeJar>
 						</configuration>
 					</execution>
 				</executions>
