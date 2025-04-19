@@ -11,21 +11,21 @@ public class ScaleSpigot extends JavaPlugin {
     public void onEnable() {
         String redisHost = System.getenv("REDIS_HOST");
         if (redisHost == null || redisHost.isEmpty()) {
-            redisHost = "localhost"; // fallback if not set
+            redisHost = "172.18.0.1"; // fallback if not set
             getLogger().warning("REDIS_HOST environment variable not set. Defaulting to localhost.");
         }
 
         String redisPortEnv = System.getenv("REDIS_PORT");
         int redisPort;
         if (redisPortEnv == null || redisPortEnv.isEmpty()) {
-            redisPort = 6379;
+            redisPort = 25564;
             getLogger().warning("REDIS_PORT environment variable not set. Defaulting to 6379.");
         } else {
             try {
                 redisPort = Integer.parseInt(redisPortEnv);
             } catch (NumberFormatException e) {
                 getLogger().warning("REDIS_PORT is not a valid number. Defaulting to 6379.");
-                redisPort = 6379;
+                redisPort = 25564;
             }
         }
 
